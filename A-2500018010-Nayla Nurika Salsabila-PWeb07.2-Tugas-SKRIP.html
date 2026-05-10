@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PWeb-07.2. Tugas Javascript Dasar</title>
+</head>
+<body>
+
+<script>
+    var nilai = prompt("Masukkan nilai (0-100):");
+    nilai = parseInt(nilai);
+
+    var hasil = (nilai <= 20) ? "E" :
+            (nilai <= 39) ? "D" :
+            (nilai <= 64) ? "C" :
+            (nilai <= 79) ? "B" :
+            (nilai <= 100) ? "A" :
+            "Tidak Valid";
+
+    document.write("Nilai huruf: " + hasil);
+</script>
+
+</body>
+</html>
