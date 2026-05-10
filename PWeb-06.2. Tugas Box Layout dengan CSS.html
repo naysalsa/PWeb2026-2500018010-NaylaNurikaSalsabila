@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PWeb-06.2. Tugas Box Layout dengan CSS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #ffe7e7;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: #ffe7e7;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>PWeb-06.2. Tugas Box Layout dengan CSS</h2>
+<p>Nama: Nayla Nurika Salsabila</p> 
+<p>NIM: 2500018010</p>
+<p>Kelas: A</p>
+
+<div class="header">
+  <h2>Header</h2>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#f1a6bec8;">Column 1</div>
+  <div class="column" style="background-color:#f465929e;">Column 2</div>
+  <div class="column" style="background-color:#f1a6bec8;">Column 3</div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#f465929e;">Column 4</div>
+  <div class="column" style="background-color:#f1a6bec8;">Column 5</div>
+  <div class="column" style="background-color:#f465929e;">Column 6</div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
